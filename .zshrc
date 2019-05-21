@@ -67,7 +67,10 @@ plugins=(
   kubectl
   kube-ps1
   helm
-  autojump
+  #autojump
+  z
+  sublime
+  vscode
   mvn
   # customized plugins
   goext
@@ -76,7 +79,7 @@ plugins=(
   login
  # miniconda
   zsh-autosuggestions
- # zsh-syntax-highlighting
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -110,6 +113,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_DIR_DEFAULT_FOREGROUND=‘yellow’
+POWERLEVEL9K_DIR_HOME_BACKGROUND='172'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='172'
+POWERLEVEL9K_DIR_ETC_BACKGROUND='172'
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='172'
 
 
 if [ -x "$(command -v yarn)" ]; then
