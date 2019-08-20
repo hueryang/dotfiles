@@ -128,3 +128,6 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias tps="export http_proxy=socks5://localhost:1080;export https_proxy=socks5://localhost:1080"
 alias tph="export http_proxy=http://localhost:1081;export https_proxy=http://localhost:1081"
 alias tpu='unset http_proxy; unset https_proxy'
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/vault vault
