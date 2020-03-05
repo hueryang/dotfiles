@@ -63,6 +63,7 @@ plugins=(
   git
   golang
   jenv
+  pyenv
   yarn
   kubectl
   kube-ps1
@@ -131,3 +132,14 @@ alias tpu='unset http_proxy; unset https_proxy'
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
+
+# for react native tools
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# go env
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
