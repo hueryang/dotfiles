@@ -1,5 +1,5 @@
 #!/bin/bash
-git clone --bare https://github.com/huxiaoer/dotfiles.git $HOME/.dotfiles
+git clone --bare https://github.com/hueryang/dotfiles.git $HOME/.dotfiles
 function dotfiles {
    /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
 }
